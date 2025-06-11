@@ -1,18 +1,28 @@
 import React from "react";
 
-import { ButtonHTMLAttributes } from "react";
+type ButtonProps = {
+  children: React.ReactNode;
+  className?: string;
+  type?: "button" | "submit" | "reset";
+  variant?: "default" | "outline";
+};
 
-type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
+const styles: Record<NonNullable<ButtonProps["variant"]>, string> = {
+  default: "bg-blue-900 text-white",
+  outline: "border border-white text-white bg-transparent",
+};
 
-export function Button(props: ButtonProps) {
-  const base = "rounded-2xl px-4 py-2 font-semibold shadow";
-  const styles = {
-    default: "bg-blue-600 text-white hover:bg-blue-700",
-    outline: "border border-blue-600 text-blue-600 hover:bg-blue-50",
-  };
-
+export function Button({
+  children,
+  className = "",
+  type = "button",
+  variant = "default",
+}: ButtonProps) {
   return (
-    <button className={`${base} ${styles[variant]} ${className}`} {...props}>
+    <button
+      type={type}
+      className={`rounded-xl px-4 py-2 text-sm font-medium ${styles[variant]} ${className}`}
+    >
       {children}
     </button>
   );

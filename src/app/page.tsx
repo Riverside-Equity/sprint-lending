@@ -95,7 +95,8 @@ export default function HomePage() {
       <section className="bg-gray-100 py-12 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">How It Works</h2>
-          <p className="mb-6">We make hard money lending simple. Here's what to expect:</p>
+          <p className="mb-6">We make hard money lending simple. <p>Here&rsquo;s what to expect:</p>
+
           <ul className="text-left max-w-xl mx-auto space-y-2 list-disc list-inside">
             <li>Submit a short application</li>
             <li>Get a quote within 24 hours</li>

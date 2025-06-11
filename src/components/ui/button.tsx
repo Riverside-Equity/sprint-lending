@@ -1,11 +1,10 @@
 import React from "react";
 
-export function Button({
-  children,
-  className = "",
-  variant = "default",
-  ...props
-}: any) {
+import { ButtonHTMLAttributes } from "react";
+
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
+
+export function Button(props: ButtonProps) {
   const base = "rounded-2xl px-4 py-2 font-semibold shadow";
   const styles = {
     default: "bg-blue-600 text-white hover:bg-blue-700",

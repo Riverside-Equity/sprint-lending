@@ -34,9 +34,10 @@ export default function HomePage() {
         </p>
         <div className="flex justify-center gap-4 flex-wrap">
           <Button className="text-lg px-6 py-3 bg-white text-blue-900">Apply Now</Button>
-          <Button variant="outline" className="text-lg px-6 py-3 border-white text-white">
-            Use Loan Calculator
-          </Button>
+          <Button className="text-lg px-6 py-3 border border-white text-white">
+  Use Loan Calculator
+</Button>
+
         </div>
       </section>
 
@@ -92,19 +93,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-gray-100 py-12 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">How It Works</h2>
-          <p className="mb-6">We make hard money lending simple. Here&rsquo;s what to expect:</p>
+<section className="bg-gray-100 py-12 px-6">
+  <div className="max-w-4xl mx-auto text-center">
+    <h2 className="text-3xl font-bold mb-4">How It Works</h2>
+    <p className="mb-6">We make hard money lending simple. Here&rsquo;s what to expect:</p>
+    <ul className="text-left max-w-xl mx-auto space-y-2 list-disc list-inside">
+      <li>Submit a short application</li>
+      <li>Get a quote within 24 hours</li>
+      <li>Close in as little as 3 days</li>
+      <li>Draw funds for rehab or property acquisition</li>
+    </ul>
+  </div>
+</section>
 
-          <ul className="text-left max-w-xl mx-auto space-y-2 list-disc list-inside">
-            <li>Submit a short application</li>
-            <li>Get a quote within 24 hours</li>
-            <li>Close in as little as 3 days</li>
-            <li>Draw funds for rehab or property acquisition</li>
-          </ul>
-        </div>
-      </section>
 
       <section className="py-12 px-6 max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold mb-6 text-center">Apply for a Loan</h2>

@@ -25,6 +25,14 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-white text-gray-900">
+      {/* ... rest of your JSX content */}
+    </main>
+  );
+}
+
+
+  return (
+    <main className="min-h-screen bg-white text-gray-900">
       <section className="bg-blue-900 text-white py-20 px-4 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           Hard Money Loans for Real Estate Investors
